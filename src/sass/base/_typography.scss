@@ -1,0 +1,53 @@
+body {
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $font-color;
+    line-height: 1.5;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.nav_linkbox_link {
+    font-size: 2rem;
+    font-weight: 500;
+    color: inherit;
+
+    &:hover {
+        color: $color-4;
+    }
+}
+
+.header_hed-1 {
+    // font-family: 'Allura', cursive;
+    // font-family: 'Glass Antiqua', cursive;
+    font-family: 'Teko', sans-serif;
+    font-size: 6.5rem;
+    text-shadow: 2px 1px $color-1;
+    font-weight: 500;
+}
+
+.header_lang_pl-cz {
+    text-decoration: none;
+    color: inherit;
+    font-size: 3rem;
+    transition: all 0.25s;
+
+    &:hover {
+        color: $color-4;
+    }
+}
+
+.about_wrap_hed-2 {
+    font-size: 3rem;
+}
+
+.footerlink {
+    text-decoration: none;
+    color: $color-2;
+    font-size: 1.8rem;
+}
+
+.adress{
+    font-size: 2rem;
+}

@@ -1,0 +1,24 @@
+.footer{
+    height: 35rem;
+    width:100%;
+    background-color: $color-4 ;
+
+    &_container {
+        margin: 5rem 15rem 0 15rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &_cont{
+            margin: 4rem;
+            padding: 2rem;
+            border-left: 1px solid white;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &_aut{
+        margin: 1rem;
+        text-align: center;
+    }
+}
