@@ -56,7 +56,8 @@
             <section class="container">
                 <div class="container_wrap">
                     <h2 class="container_wrap_hed-2" id="AboutHead">O nas</h2>
-                    <p class="description" id="AboutDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat. Integer luctus nec dolor utullamcorper. Integer vulputate ante urna. Vestibulum vitae posuere nisl. Proin finibus diam ut viverra semper. Phasellus in cursus magna, sed volutpat felis. Aliquam erat volutpat. </p>
+                    <p class="description" id="AboutDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat. Integer luctus nec dolor utullamcorper.
+                        Integer vulputate ante urna. Vestibulum vitae posuere nisl. Proin finibus diam ut viverra semper. Phasellus in cursus magna, sed volutpat felis. Aliquam erat volutpat. </p>
                 </div>
             </section>
 
@@ -69,11 +70,26 @@
             <section class="container">
                 <div class="container_wrap">
                     <h2 class="container_wrap_hed-2" id="GalleryHead">Galleria</h2>
-                    <p class="description" id="GalleryDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat. Integer luctus nec dolor utullamcorper. Integer vulputate ante urna. Vestibulum vitae posuere nisl. Proin finibus diam ut viverra semper. Phasellus in cursus magna, sed volutpat felis. Aliquam erat volutpat.</p>
+                    <p class="description" id="GalleryDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat. Integer luctus nec dolor
+                        utullamcorper. Integer vulputate ante urna. Vestibulum vitae posuere nisl. Proin finibus diam ut viverra semper. Phasellus in cursus magna, sed volutpat felis. Aliquam erat volutpat.</p>
+
                     <div class="container_wrap_gallery">
-                        <figure>
-                            <img class="gallery_img" src="" alt="car1">
-                        </figure>
+                            <img class="gallery_img" src="./img/cars/car_1.png" alt="car1">
+                            <img class="gallery_img" src="./img/cars/car_2.png" alt="car2">
+                            <img class="gallery_img" src="./img/cars/car_3.png" alt="car3">
+                    </div>
+
+                    <div class="container_wrap_buttons">
+                        <div class="gall-buttons">
+                            <button id="btn-prev" class="gall-buttons_btn-1 gallery-button">❮ Prev</button>
+                            <button id="btn-netx" oninvalid=""class="gall-buttons_btn-1 gallery-button">Next ❯</button>
+                        </div>
+
+                        <div class="gall-buttons">
+                            <button id="btn-1" class="gall-buttons_btn-2 gallery-button">1</button>
+                            <button id="btn-2" class="gall-buttons_btn-2 gallery-button">2</button>
+                            <button id="btn-3" class="gall-buttons_btn-2 gallery-button">3</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -92,11 +108,11 @@
                 <div class="tab-cont">
                     <table>
                         <tr>
-                            <th id = "tab-model">Model</th>
-                            <th id = "tab-cena-1h">Cena 1h</th>
-                            <th id = "tab-cena-3h">Cena 3h</th>
-                            <th id = "tab-cena-24h">Cały dzień</th>
-                            <th id = "tab-cena-km">Dojazd do klienta</th>
+                            <th id="tab-model">Model</th>
+                            <th id="tab-cena-1h">Cena 1h</th>
+                            <th id="tab-cena-3h">Cena 3h</th>
+                            <th id="tab-cena-24h">Cały dzień</th>
+                            <th id="tab-cena-km">Dojazd do klienta</th>
                         </tr>
                         <tr>
                             <td>Mercedes</td>
@@ -132,7 +148,7 @@
                             <button class="form_inputs_button" type="button">Wyślij</button>
                         </div>
 
-                        <textarea class="form_textarea" id="textarea" name="subject" placeholder="Miejsce na wiadomość" ></textarea>
+                        <textarea class="form_textarea" id="textarea" name="subject" placeholder="Miejsce na wiadomość"></textarea>
                     </form>
                 </div>
             </section>
@@ -163,6 +179,27 @@
 
         <p class="footer_aut">Created and designes by Michał Piechulek &copy</p>
     </footer>
+
+    <div class="menu" id="menu">
+        <form class="form">
+            <a class="form_close" id="close">x</a>
+            <nav class="nav">
+                <div class="nav_linkbox">
+                    <a href="#AboutHead" class="nav_linkbox_link" id="nav-us">O nas</a>
+                </div>
+                <div class="nav_linkbox">
+                    <a href="#" class="nav_linkbox_link" id="nav-gal">Galleria</a>
+                </div>
+                <div class="nav_linkbox">
+                    <a href="#" class="nav_linkbox_link" id="nav-price">Cennik</a>
+                </div>
+                <div class="nav_linkbox">
+                    <a href="#" class="nav_linkbox_link" id="nav-cont">Kontakt.</a>
+                </div>
+            </nav>
+
+        </form>
+    </div>
 
 </body>
 

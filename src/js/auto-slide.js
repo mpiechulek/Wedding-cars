@@ -1,34 +1,38 @@
-<style>
-.mySlides {display:none;}
-</style>
-</head>
+//jshint esversion:6
 
-<body>
+let slideIndex = 1;
 
-<h2 class="w3-center">Automatic Slideshow</h2>
+function showDivs(n) {
+  const x = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("demo");
 
-<div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="img_la.jpg" style="width:100%">
-  <img class="mySlides" src="img_ny.jpg" style="width:100%">
-  <img class="mySlides" src="img_chicago.jpg" style="width:100%">
-</div>
+  if (n > x.length) {
+      slideIndex = 1;
+  }
 
-<script>
-var myIndex = 0;
-carousel();
+  if (n < 1) {
+      slideIndex = x.length;
+  }
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
+  for (leti = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
 
-</body>
-</html>
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+
+function currentDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+//==============================================================================
+
+showDivs(slideIndex);

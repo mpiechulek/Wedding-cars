@@ -1,0 +1,61 @@
+.container_wrap_gallery {
+    width: 100%;
+    height:auto;
+    margin: 2rem auto;
+}
+
+.container_wrap_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.gall-buttons {
+    margin: 1rem auto;
+
+    &_btn-1 {
+        width: 10rem;
+        height: 4rem;
+    }
+
+    &_btn-2 {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.gallery-button {
+    background-color: $color-1;
+    border: none;
+    color: $font-color;
+    transition: all 0.3s;
+
+    &:hover{
+        background-color: $color-4;
+        color: $color-2;
+    }
+
+    &:active {
+        background-color: $color-3;
+        color: $color-2;
+    }
+}
+
+.gallery-button-blue {
+    background-color: $color-3;
+
+    &:hover{
+        background-color: $color-1;
+        color: $color-2;
+    }
+
+    &:active {
+        background-color: $color-4;
+        color: $color-2;
+    }
+}
+
+.gallery_img {
+    display: none;
+    margin: 1rem auto;
+}

@@ -1,4 +1,6 @@
+//jshint esversion:6
 // Scroll back button efect
+
 const btn = document.querySelector('.scrollBtn');
 
 window.addEventListener('scroll', () => {

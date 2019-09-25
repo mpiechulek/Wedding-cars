@@ -1,9 +1,12 @@
 .fixed {
-    margin-top: 25rem;
-    background-image: url('../img/Photo by Caio Resende from Pexels.jpg');
+    // margin-top: 25rem;
+    background-image: url("../img/Photo by Caio Resende from Pexels.jpg");
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
