@@ -30,13 +30,13 @@
                 <a href="#AboutHead" class="nav_linkbox_link" id="nav-us">O nas</a>
             </div>
             <div class="nav_linkbox">
-                <a href="#" class="nav_linkbox_link" id="nav-gal">Galleria</a>
+                <a href="#GalleryHead" class="nav_linkbox_link" id="nav-gal">Galleria</a>
             </div>
             <div class="nav_linkbox">
-                <a href="#" class="nav_linkbox_link" id="nav-price">Cennik</a>
+                <a href="#PriceHead" class="nav_linkbox_link" id="nav-price">Cennik</a>
             </div>
             <div class="nav_linkbox">
-                <a href="#" class="nav_linkbox_link" id="nav-cont">Kontakt.</a>
+                <a href="#ContactHead" class="nav_linkbox_link" id="nav-cont">Kontakt.</a>
             </div>
         </nav>
     </header>
@@ -133,7 +133,7 @@
             <!-- contact -->
             <section class="container">
                 <div class="container_wrap">
-                    <h2 class="container_wrap_hed-2" id="PriceHead">Kontakt</h2>
+                    <h2 class="container_wrap_hed-2" id="ContactHead">Kontakt</h2>
                     <p class="description" id="PriceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat.</p>
                     <br>
                     <p class="adress">Wypozyczalnia samochodów ślubnych</p>
@@ -180,25 +180,18 @@
         <p class="footer_aut">Created and designes by Michał Piechulek &copy</p>
     </footer>
 
-    <div class="menu" id="menu">
-        <form class="form">
-            <a class="form_close" id="close">x</a>
-            <nav class="nav">
-                <div class="nav_linkbox">
-                    <a href="#AboutHead" class="nav_linkbox_link" id="nav-us">O nas</a>
-                </div>
-                <div class="nav_linkbox">
-                    <a href="#" class="nav_linkbox_link" id="nav-gal">Galleria</a>
-                </div>
-                <div class="nav_linkbox">
-                    <a href="#" class="nav_linkbox_link" id="nav-price">Cennik</a>
-                </div>
-                <div class="nav_linkbox">
-                    <a href="#" class="nav_linkbox_link" id="nav-cont">Kontakt.</a>
-                </div>
-            </nav>
+    <div >
+        <img src="./img/menu.svg" class="ham-icon" alt="ham">
+    </div>
 
-        </form>
+    <div class="menu" id="menu">
+            <nav class="menu_nav-2">
+                <a href="#AboutHead" class="nav_linkbox_link ham-link" id="nav-us">O nas</a>
+                <a href="#" class="nav_linkbox_link ham-link" id="nav-gal">Galleria</a>
+                <a href="#" class="nav_linkbox_link ham-link" id="nav-price">Cennik</a>
+                <a href="#" class="nav_linkbox_link ham-link" id="nav-cont">Kontakt.</a>
+            </nav>
+            <button class="close-btn" id="close-btn">x</button>
     </div>
 
 </body>

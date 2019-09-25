@@ -2,62 +2,56 @@
     position:fixed;
     right: 0;
     top: 0;
-    background-color: rgb(42, 42, 42);
+    background-color: $color-1;
     height: 100vh;
     width: 0;
-    z-index: 2;
+    z-index: 10;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 2rem;
+
+    &_nav-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
-.form {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.ham-link {
+    display: block;
+    margin: 5rem
+}
 
-    &_close {
-        font-size: 3rem;
-        position: absolute;
-        top:3%;
-        right: 6%;
-        cursor: pointer;
+.ham-icon {
+    position: absolute;
+    margin: 0;
+    top: 1%;
+    right: 5%;
+    cursor: pointer;
 
-        &:hover{
-            color: #b3b3b3;
-        }
+    &:hover {
+        fill:red !important;
     }
+}
 
-    &_input{
-        font-size: 1.6rem;
-        margin-top: 8rem;
-        text-align: center;
-        width:18rem;
-        height: 5rem;
-        border: none;
-        border-radius: 1rem;
-        padding: 1rem 2rem;
-        overflow:hidden;
-    }
 
-    &_btn{
-        font-size: 1.6rem;
-        margin-top: 3rem;
-        width: 18rem;
-        height: 5rem;
-        border: none;
-        border-radius: 1rem;
-        transition: .3s;
-        cursor: pointer;
 
-        &:hover{
-            background-color: #b3b3b3;
-        }
+.close-btn {
+    right: 5rem;
+    top: 5rem;
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: $color-2;
 
-        &:active{
-            background-color: #909090;
-        }
+    font-weight: 600;
+    font-size: 5rem;
 
+    &:hover {
+        color:$color-4;
     }
 }
