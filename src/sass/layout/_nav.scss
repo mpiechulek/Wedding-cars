@@ -10,10 +10,6 @@
 
         &_link {
             display: block;
-            transition: all 0.25s;
-            text-decoration: none;
-            text-align: center;
-            coursor: pinter;
             @include absCenetr;
         }
     }

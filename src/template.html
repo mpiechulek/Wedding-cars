@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Allura&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Glass+Antiqua&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="icon" href="favico.ico">
-    <link rel="stylesheet" href="sass/main.scss">
+    <!-- <link rel="stylesheet" href="sass/main.scss"> -->
     <title id="title">Wypożyczalnia samochodów</title>
 
 </head>
@@ -21,22 +21,22 @@
     <header class="header">
         <h1 id="hed-1" class="header_hed-1">Wypożyczalnia samochodów ślubnych</h1>
         <div class="header_lang">
-            <a href="#pl" class="header_lang_pl-cz">PL</a>
-            <a href="#cz" class="header_lang_pl-cz">CZ</a>
+            <a href="#pl" class="header_lang_pl-cz" id="PL">PL</a>
+            <a href="#cz" class="header_lang_pl-cz" id="CZ">CZ</a>
         </div>
         <div class="header_back"></div>
         <nav class="nav">
             <div class="nav_linkbox">
-                <a href="#AboutHead" class="nav_linkbox_link" id="nav-us">O nas</a>
+                <a href="#AboutHead" class="nav_linkbox_link nav-style" id="nav-us">O nas</a>
             </div>
             <div class="nav_linkbox">
-                <a href="#GalleryHead" class="nav_linkbox_link" id="nav-gal">Galleria</a>
+                <a href="#GalleryHead" class="nav_linkbox_link nav-style" id="nav-gal">Galleria</a>
             </div>
             <div class="nav_linkbox">
-                <a href="#PriceHead" class="nav_linkbox_link" id="nav-price">Cennik</a>
+                <a href="#PriceHead" class="nav_linkbox_link nav-style" id="nav-price">Cennik</a>
             </div>
             <div class="nav_linkbox">
-                <a href="#ContactHead" class="nav_linkbox_link" id="nav-cont">Kontakt.</a>
+                <a href="#ContactHead" class="nav_linkbox_link nav-style" id="nav-cont">Kontakt.</a>
             </div>
         </nav>
     </header>
@@ -47,7 +47,7 @@
             <!-- fixed image  -->
             <div class="fixed"></div>
 
-            <!-- rong icone -->
+            <!-- ring icone -->
             <div class="rings">
                 <img class="rings_icon" src="./img/wedding-ring.svg" alt="rings">
             </div>
@@ -61,7 +61,7 @@
                 </div>
             </section>
 
-            <!-- rong icone -->
+            <!-- ring icone -->
             <div class="rings">
                 <img class="rings_icon" src="./img/wedding-ring.svg" alt="rings">
             </div>
@@ -94,7 +94,7 @@
                 </div>
             </section>
 
-            <!-- rong icone -->
+            <!-- ring icone -->
             <div class="rings">
                 <img class="rings_icon" src="./img/wedding-ring.svg" alt="rings">
             </div>
@@ -180,20 +180,27 @@
         <p class="footer_aut">Created and designes by Michał Piechulek &copy</p>
     </footer>
 
-    <div >
-        <img src="./img/menu.svg" class="ham-icon" alt="ham">
+    <!-- icons -->
+
+    <div>
+        <img src="./img/menu.svg" class="ham-icon icon-nav" id="ham-icon" alt="ham">
     </div>
 
-    <div class="menu" id="menu">
-            <nav class="menu_nav-2">
-                <a href="#AboutHead" class="nav_linkbox_link ham-link" id="nav-us">O nas</a>
-                <a href="#" class="nav_linkbox_link ham-link" id="nav-gal">Galleria</a>
-                <a href="#" class="nav_linkbox_link ham-link" id="nav-price">Cennik</a>
-                <a href="#" class="nav_linkbox_link ham-link" id="nav-cont">Kontakt.</a>
-            </nav>
-            <button class="close-btn" id="close-btn">x</button>
+    <div>
+        <img src="./img/circle-up.svg" class="arrow-icon icon-nav" id="arrow-icon" alt="arrow">
     </div>
 
+    <!-- hamburger menu -->
+
+    <div class="ham-menu" id="ham-menu">
+        <nav class="ham-menu_nav-2" id="ham-menu_nav-2" >
+            <a href="#AboutHead" class="nav-style ham-link" id="nav-us">O nas</a>
+            <a href="#GalleryHead" class="nav-style ham-link" id="nav-gal">Galleria</a>
+            <a href="#PriceHead" class="nav-style ham-link" id="nav-price">Cennik</a>
+            <a href="#ContactHead" class="nav-style ham-link" id="nav-cont">Kontakt.</a>
+        </nav>
+        <button class="close-btn" id="close-btn">x</button>
+    </div>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 //jshint esversion:8
 
-let language = {
+export const language = {
     pl:{
         heading:'Cześć!',
         navUS:'O nas',
