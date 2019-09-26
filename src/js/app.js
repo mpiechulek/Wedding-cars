@@ -1,5 +1,6 @@
 //jshint esversion:6
-import {openMenu,closeMenu } from './components/ham-menu.js';
+import { openMenu, closeMenu } from './components/ham-menu.js';
+import { translator } from './components/translate.js';
 
 const icon = document.getElementById('ham-icon');
 const close = document.getElementById('close-btn');
@@ -9,19 +10,20 @@ const scrollBtn = document.getElementById('arrow-icon');
 //==============================================================================
 
 //clicking on the hamburger menu icon shows the hidden menu
-icon.addEventListener('click',()=>{
+icon.addEventListener('click', () => {
     openMenu();
 });
 
 //clicking on the x mark hides the menu
-close.addEventListener('click',()=>{
+close.addEventListener('click', () => {
     closeMenu();
 });
 
 //clcicking on the link in the hidden menu, closes the menu
 hamLinks.forEach(function(elem) {
-    elem.addEventListener("click", () =>{
-        console.log('Click');closeMenu();
+    elem.addEventListener("click", () => {
+        console.log('Click');
+        closeMenu();
     });
 });
 
@@ -39,3 +41,5 @@ scrollBtn.addEventListener("click", () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+
+translator();

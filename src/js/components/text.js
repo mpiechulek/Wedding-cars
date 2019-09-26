@@ -2,27 +2,47 @@
 
 export const language = {
     pl:{
-        heading:'Cześć!',
-        navUS:'O nas',
-        navGal:'Galleria',
-        navPrice: 'Oferta',
-        navCon: 'Kontakt'
-    },
-    cz: {
-        heading:'Ahoj',
+        heading:'Wypożyczalnia samochodów ślubnych',
         nav:{
-            navUS:'O nás',
-            navGal:'Galerie',
+            navUS:'O nas',
+            navGal:'Galeria',
             navPrice: 'Oferta',
             navCon: 'Kontakt'
         },
         Us:{
             UsHead: 'Oferta',
-            UsTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium euismod lorem, bibendum consequat dolor molestie quis. Donec in pulvinar lacus. Aenean imperdiet tellus in ligula mollis auctor. Morbi pretium congue accumsan. Aenean eget venenatis dolor. In sed risus non felis vehicula viverra at eget purus. Etiam arcu est, iaculis malesuada quam vitae, faucibus malesuada est. '
+            UsTxt: 'PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL '
         },
         Gal:{
-            UsHead: 'Oferta',
-            GalTxt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium euismod lorem, bibendum consequat dolor molestie quis. Donec in pulvinar lacus. Aenean imperdiet tellus in ligula mollis auctor. Morbi pretium congue accumsan. Aenean eget venenatis dolor. In sed risus non felis vehicula viverra at eget purus. Etiam arcu est, iaculis malesuada quam vitae, faucibus malesuada est. '
-        }
+            GalHead: 'Galeria',
+            GalTxt: 'PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL '
+        },
+        Price:{
+            PriceHead: 'Oferta',
+            PriceTxt: 'PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL ',
+            tabel:{
+                1:'11',
+                2:'22',
+                3:'33',
+                4:'44'
+            }
+        },
+        Con:{
+            ConHead: 'Oferta',
+            ConTxt: 'PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL ',
+            p1:'wypożyczalnia',
+            p2:'tel.123 456 789',
+            p3:'sluby@123.com',
+            form:{
+                inputFirstName:'Imię',
+                inputSecondName:'Nazwisko',
+                butEmail:'Email',
+                txt: 'Miejsce na wiadoność'
+            }
+        },
+    },
+    //========================================cz================================
+    cz:{
+        heading:'Půjčovna svatebních aut'
     }
 };

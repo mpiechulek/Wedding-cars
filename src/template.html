@@ -27,16 +27,16 @@
         <div class="header_back"></div>
         <nav class="nav">
             <div class="nav_linkbox">
-                <a href="#AboutHead" class="nav_linkbox_link nav-style" id="nav-us">O nas</a>
+                <a href="#AboutHead" class="nav_linkbox_link nav-style nav-us">O nas</a>
             </div>
             <div class="nav_linkbox">
-                <a href="#GalleryHead" class="nav_linkbox_link nav-style" id="nav-gal">Galleria</a>
+                <a href="#GalleryHead" class="nav_linkbox_link nav-style nav-gal">Galleria</a>
             </div>
             <div class="nav_linkbox">
-                <a href="#PriceHead" class="nav_linkbox_link nav-style" id="nav-price">Cennik</a>
+                <a href="#PriceHead" class="nav_linkbox_link nav-style nav-price">Cennik</a>
             </div>
             <div class="nav_linkbox">
-                <a href="#ContactHead" class="nav_linkbox_link nav-style" id="nav-cont">Kontakt.</a>
+                <a href="#ContactHead" class="nav_linkbox_link nav-style nav-cont">Kontakt.</a>
             </div>
         </nav>
     </header>
@@ -56,7 +56,8 @@
             <section class="container">
                 <div class="container_wrap">
                     <h2 class="container_wrap_hed-2" id="AboutHead">O nas</h2>
-                    <p class="description" id="AboutDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat. Integer luctus nec dolor utullamcorper.
+                    <p class="description" id="AboutDescription1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat. Integer luctus nec dolor
+                        utullamcorper.
                         Integer vulputate ante urna. Vestibulum vitae posuere nisl. Proin finibus diam ut viverra semper. Phasellus in cursus magna, sed volutpat felis. Aliquam erat volutpat. </p>
                 </div>
             </section>
@@ -74,15 +75,15 @@
                         utullamcorper. Integer vulputate ante urna. Vestibulum vitae posuere nisl. Proin finibus diam ut viverra semper. Phasellus in cursus magna, sed volutpat felis. Aliquam erat volutpat.</p>
 
                     <div class="container_wrap_gallery">
-                            <img class="gallery_img" src="./img/cars/car_1.png" alt="car1">
-                            <img class="gallery_img" src="./img/cars/car_2.png" alt="car2">
-                            <img class="gallery_img" src="./img/cars/car_3.png" alt="car3">
+                        <img class="gallery_img" src="./img/cars/car_1.png" alt="car1">
+                        <img class="gallery_img" src="./img/cars/car_2.png" alt="car2">
+                        <img class="gallery_img" src="./img/cars/car_3.png" alt="car3">
                     </div>
 
                     <div class="container_wrap_buttons">
                         <div class="gall-buttons">
                             <button id="btn-prev" class="gall-buttons_btn-1 gallery-button">❮ Prev</button>
-                            <button id="btn-netx" oninvalid=""class="gall-buttons_btn-1 gallery-button">Next ❯</button>
+                            <button id="btn-netx" oninvalid="" class="gall-buttons_btn-1 gallery-button">Next ❯</button>
                         </div>
 
                         <div class="gall-buttons">
@@ -115,11 +116,11 @@
                             <th id="tab-cena-km">Dojazd do klienta</th>
                         </tr>
                         <tr>
-                            <td>Mercedes</td>
-                            <td>100zł/800czk</td>
-                            <td>250zł/1600czk</td>
-                            <td>500zł/3000czk</td>
-                            <td> + 40zł/200czk/10km</td>
+                            <td id="tab-11">Mercedes</td>
+                            <td id="tab-12">100zł/800czk</td>
+                            <td id="tab-13">250zł/1600czk</td>
+                            <td id="tab-14">500zł/3000czk</td>
+                            <td id="tab-15"> + 40zł/200czk/10km</td>
                         </tr>
                     </table>
                 </div>
@@ -134,13 +135,13 @@
             <section class="container">
                 <div class="container_wrap">
                     <h2 class="container_wrap_hed-2" id="ContactHead">Kontakt</h2>
-                    <p class="description" id="PriceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat.</p>
+                    <p class="description" id="ContactDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat.</p>
                     <br>
                     <p class="adress">Wypozyczalnia samochodów ślubnych</p>
                     <p class="adress">tel.123 456 789</p>
                     <p class="adress">Email: weddingcars@123.com</p>
 
-                    <form class="form">
+                    <form class="form" action="mailto:you@yourwebsite.com">
                         <div class="form_inputs">
                             <input class="form_inputs_imput" type="email" placeholder="Email">
                             <input class="form_inputs_imput" type="text" placeholder="Imię">
@@ -159,11 +160,11 @@
     <footer class="footer">
         <div class="footer_container">
             <div class="footer_container_cont">
-                <a href="#us" class="footerlink" id="fotus">Home</a>
-                <a href="#us" class="footerlink" id="fotus">O nas</a>
-                <a href="#us" class="footerlink" id="fotus">Galleria</a>
-                <a href="#us" class="footerlink" id="fotus">Oferta</a>
-                <a href="#us" class="footerlink" id="fotus">Kontakt</a>
+                <a href="#hed-1" class="footerlink">Home</a>
+                <a href="#AboutHead" class="footerlink nav-us">O nas</a>
+                <a href="#GalleryHead" class="footerlink nav-gal">Galleria</a>
+                <a href="#PriceHead" class="footerlink nav-price">Oferta</a>
+                <a href="#ContactHead" class="footerlink nav-cont">Kontakt</a>
             </div>
 
             <div class="footer_container_cont">
@@ -193,11 +194,11 @@
     <!-- hamburger menu -->
 
     <div class="ham-menu" id="ham-menu">
-        <nav class="ham-menu_nav-2" id="ham-menu_nav-2" >
-            <a href="#AboutHead" class="nav-style ham-link" id="nav-us">O nas</a>
-            <a href="#GalleryHead" class="nav-style ham-link" id="nav-gal">Galleria</a>
-            <a href="#PriceHead" class="nav-style ham-link" id="nav-price">Cennik</a>
-            <a href="#ContactHead" class="nav-style ham-link" id="nav-cont">Kontakt.</a>
+        <nav class="ham-menu_nav-2" id="ham-menu_nav-2">
+            <a href="#AboutHead" class="nav-style ham-link nav-us">O nas</a>
+            <a href="#GalleryHead" class="nav-style ham-link nav-gal">Galleria</a>
+            <a href="#PriceHead" class="nav-style ham-link nav-price">Cennik</a>
+            <a href="#ContactHead" class="nav-style ham-link nav-cont">Kontakt.</a>
         </nav>
         <button class="close-btn" id="close-btn">x</button>
     </div>
