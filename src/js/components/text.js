@@ -2,47 +2,81 @@
 
 export const language = {
     pl:{
-        heading:'Wypożyczalnia samochodów ślubnych',
+        heading:'Wypożyczalnia samochodów ślubnych pl',
         nav:{
-            navUS:'O nas',
-            navGal:'Galeria',
-            navPrice: 'Oferta',
-            navCon: 'Kontakt'
+            navUS:'O nas pl',
+            navGal:'Galeria pl',
+            navPrice: 'Oferta pl',
+            navCon: 'Kontakt pl'
         },
         Us:{
-            UsHead: 'Oferta',
+            UsHead: 'O nas pl',
             UsTxt: 'PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL '
         },
         Gal:{
-            GalHead: 'Galeria',
+            GalHead: 'Galeria pl',
             GalTxt: 'PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL '
         },
         Price:{
-            PriceHead: 'Oferta',
+            PriceHead: 'Oferta pl',
             PriceTxt: 'PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL ',
             tabel:{
-                1:'11',
-                2:'22',
-                3:'33',
-                4:'44'
+                tab11:'pl',
+                tab12:'pl',
+                tab13:'pl',
+                tab14:'pl',
+                tab15:'pl'
             }
         },
         Con:{
-            ConHead: 'Oferta',
+            ConHead: 'Kontakt pl',
             ConTxt: 'PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL PL ',
-            p1:'wypożyczalnia',
-            p2:'tel.123 456 789',
-            p3:'sluby@123.com',
             form:{
-                inputFirstName:'Imię',
-                inputSecondName:'Nazwisko',
-                butEmail:'Email',
-                txt: 'Miejsce na wiadoność'
+                inputFirstName:'Imię pl',
+                inputSecondName:'Nazwisko pl',
+                button:'Wyslij pl',
+                txt: 'Miejsce na wiadoność pl'
             }
-        },
+        }
+
     },
     //========================================cz================================
     cz:{
-        heading:'Půjčovna svatebních aut'
-    }
+        heading:'Wypożyczalnia samochodów ślubnych cz',
+        nav:{
+            navUS:'O nas cz',
+            navGal:'Galeria cz',
+            navPrice: 'Oferta cz',
+            navCon: 'Kontakt cz'
+        },
+        Us:{
+            UsHead: 'O nas cz',
+            UsTxt: 'CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ  '
+        },
+        Gal:{
+            GalHead: 'Galeria cz',
+            GalTxt: 'CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ  '
+        },
+        Price:{
+            PriceHead: 'Oferta cz',
+            PriceTxt: 'CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ  ',
+            tabel:{
+                tab11:'cz',
+                tab12:'cz',
+                tab13:'cz',
+                tab14:'cz',
+                tab15:'cz'
+            }
+        },
+        Con:{
+            ConHead: 'Kontakt cz',
+            ConTxt: 'CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ CZ  ',
+            form:{
+                inputFirstName:'Imię cz',
+                inputSecondName:'Nazwisko cz',
+                button:'Wyslij cz',
+                txt: 'Miejsce na wiadoność cz'
+            }
+        }
+    },
 };

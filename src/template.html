@@ -56,7 +56,7 @@
             <section class="container">
                 <div class="container_wrap">
                     <h2 class="container_wrap_hed-2" id="AboutHead">O nas</h2>
-                    <p class="description" id="AboutDescription1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat. Integer luctus nec dolor
+                    <p class="description" id="AboutDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat. Integer luctus nec dolor
                         utullamcorper.
                         Integer vulputate ante urna. Vestibulum vitae posuere nisl. Proin finibus diam ut viverra semper. Phasellus in cursus magna, sed volutpat felis. Aliquam erat volutpat. </p>
                 </div>
@@ -82,8 +82,8 @@
 
                     <div class="container_wrap_buttons">
                         <div class="gall-buttons">
-                            <button id="btn-prev" class="gall-buttons_btn-1 gallery-button">❮ Prev</button>
-                            <button id="btn-netx" oninvalid="" class="gall-buttons_btn-1 gallery-button">Next ❯</button>
+                            <button id="btn-prev" class="gall-buttons_btn-1 gallery-button">❮</button>
+                            <button id="btn-netx" oninvalid="" class="gall-buttons_btn-1 gallery-button">❯</button>
                         </div>
 
                         <div class="gall-buttons">
@@ -137,16 +137,16 @@
                     <h2 class="container_wrap_hed-2" id="ContactHead">Kontakt</h2>
                     <p class="description" id="ContactDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula nisi eu sem sagittis interdum. Proin auctor sagittis arcu at feugiat.</p>
                     <br>
-                    <p class="adress">Wypozyczalnia samochodów ślubnych</p>
+                    <p class="adress" id = "adress-name">Wypozyczalnia samochodów ślubnych</p>
                     <p class="adress">tel.123 456 789</p>
                     <p class="adress">Email: weddingcars@123.com</p>
 
                     <form class="form" action="mailto:you@yourwebsite.com">
                         <div class="form_inputs">
-                            <input class="form_inputs_imput" type="email" placeholder="Email">
-                            <input class="form_inputs_imput" type="text" placeholder="Imię">
-                            <input class="form_inputs_imput" type="text" placeholder="Nazwisko">
-                            <button class="form_inputs_button" type="button">Wyślij</button>
+                            <input class="form_inputs_imput" type="email" id="email" placeholder="Email">
+                            <input class="form_inputs_imput" type="text" id="name" placeholder="Imię">
+                            <input class="form_inputs_imput" type="text" id="forname" placeholder="Nazwisko">
+                            <button class="form_inputs_button" id="form-btn" type="button">Wyślij</button>
                         </div>
 
                         <textarea class="form_textarea" id="textarea" name="subject" placeholder="Miejsce na wiadomość"></textarea>
@@ -168,7 +168,7 @@
             </div>
 
             <div class="footer_container_cont">
-                <p>Wypozyczalnia samochodów ślubnych</p>
+                <p id = "adress-name">Wypozyczalnia samochodów ślubnych</p>
                 <p>tel.123 456 789</p>
                 <p>Email: weddingcars@123.com</p>
             </div>
@@ -178,7 +178,7 @@
             </div>
         </div>
 
-        <p class="footer_aut">Created and designes by Michał Piechulek &copy</p>
+        <p class="footer_aut">Created and designes by Michał Piechulek 2019 &copy</p>
     </footer>
 
     <!-- icons -->
