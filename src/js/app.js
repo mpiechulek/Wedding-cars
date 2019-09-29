@@ -1,6 +1,7 @@
 //jshint esversion:6
 import { openMenu, closeMenu } from './components/ham-menu.js';
 import { translator } from './components/translate.js';
+import { imgSlider } from './components/auto-slide.js';
 
 const icon = document.getElementById('ham-icon');
 const close = document.getElementById('close-btn');
@@ -43,3 +44,4 @@ scrollBtn.addEventListener("click", () => {
 });
 
 translator();
+imgSlider();

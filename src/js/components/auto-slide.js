@@ -1,28 +1,33 @@
 //jshint esversion:6
 
 let slideIndex = 1;
+const prevBtn = document.getElementById('btn-prev');
+const nextBtn = document.getElementById('btn-netx');
+const imgSlide = document.getElementsByClassName("mySlides");
+const dots = document.getElementsByClassName("slide-btn");
+console.log(dots[1]);
+//==============================================================================
 
 function showDivs(n) {
-  const x = document.getElementsByClassName("mySlides");
-  const dots = document.getElementsByClassName("demo");
 
-  if (n > x.length) {
-      slideIndex = 1;
-  }
+    if (n > imgSlide.length) {
+        slideIndex = 1;
+    }
 
-  if (n < 1) {
-      slideIndex = x.length;
-  }
+    if (n < 1) {
+        slideIndex = imgSlide.length;
+    }
 
-  for (leti = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
+    for (let i = 0; i < imgSlide.length; i++) {
+        imgSlide[i].style.display = "none";
+    }
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-red", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-red";
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" gallery-button-blue", "");
+    }
+
+    imgSlide[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " gallery-button-blue";
 }
 
 function currentDiv(n) {
@@ -30,9 +35,28 @@ function currentDiv(n) {
 }
 
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+    showDivs(slideIndex += n);
 }
 
 //==============================================================================
-
 showDivs(slideIndex);
+//==============================================================================
+
+export const imgSlider = () => {
+
+    prevBtn.addEventListener('click', () => {
+        plusDivs(-1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        plusDivs(1);
+    });
+
+    // dots.addEventListener('click', () => {
+    //     for (let i = 0; i < dots.length; i++) {
+    //         currentDiv(i);
+    //     }
+    // });
+
+
+};

@@ -6,3 +6,24 @@
         margin: 0 auto;
     }
 }
+
+.wrapper-icons {
+    height: 10rem;
+    position: relative;
+}
+
+.move-icon {
+    left: 10rem;
+}
+
+.social-icon {
+    position: absolute;
+    margin: 3rem 0;
+    height: 5rem;
+    display:block;
+    transition: all 0.3s;
+
+    &:hover {
+        transform:scale(1.1);
+    }
+}

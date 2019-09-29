@@ -8,6 +8,10 @@
     padding: 0 5rem;
     margin: 0 auto;
 
+    @include respond(tab-land) {
+        width: 85%;
+    }
+
     &_wrap {
         &_hed-2 {
             padding-bottom: 1rem;
