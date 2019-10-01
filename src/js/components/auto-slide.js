@@ -5,7 +5,6 @@ const prevBtn = document.getElementById('btn-prev');
 const nextBtn = document.getElementById('btn-netx');
 const imgSlide = document.getElementsByClassName("mySlides");
 const dots = document.getElementsByClassName("slide-btn");
-console.log(dots[1]);
 //==============================================================================
 
 function showDivs(n) {
@@ -52,11 +51,13 @@ export const imgSlider = () => {
         plusDivs(1);
     });
 
-    // dots.addEventListener('click', () => {
-    //     for (let i = 0; i < dots.length; i++) {
-    //         currentDiv(i);
-    //     }
-    // });
-
+    for (let i = 0; dots.length > i; i++) {
+        dots[i].addEventListener('click', () => {
+            for (let j = 0; j < imgSlide.length; j++) {
+                imgSlide[j].style.display = "none";
+            }
+            imgSlide[i].style.display = "block";
+        });
+    }
 
 };

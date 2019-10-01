@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Teko:400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Glass+Antiqua&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Cinzel+Decorative:400,700,900|Cinzel:400,700,900|Poiret+One|Raleway:400,600,700i&display=swap" rel="stylesheet">
+
     <link rel="icon" href="favico.ico">
     <!-- <link rel="stylesheet" href="sass/main.scss"> -->
     <title id="title">Wypożyczalnia samochodów</title>
@@ -20,11 +23,39 @@
 
     <header class="header">
         <h1 id="hed-1" class="header_hed-1">Wypożyczalnia samochodów ślubnych</h1>
-        <div class="header_lang">
-            <a href="#pl" class="header_lang_pl-cz" id="PL">PL</a>
-            <a href="#cz" class="header_lang_pl-cz" id="CZ">CZ</a>
+        <div class="header_back">
+            <div class="header_lang">
+                <div class="hamicon-container">
+                    <a href="#pl" class="header_lang_pl-cz" id="PL">PL</a>
+                </div>
+                <div class="hamicon-container">
+                    <a href="#cz" class="header_lang_pl-cz" id="CZ">CZ</a>
+                </div>
+                <div class="hamicon-container">
+                    <svg class="ham-icon  header_lang_pl-cz" id="ham-icon"version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                    	<g>
+                    		<path d="M501.333,96H10.667C4.779,96,0,100.779,0,106.667s4.779,10.667,10.667,10.667h490.667c5.888,0,10.667-4.779,10.667-10.667
+                    			S507.221,96,501.333,96z"/>
+                    	</g>
+                    </g>
+                    <g>
+                    	<g>
+                    		<path d="M501.333,245.333H10.667C4.779,245.333,0,250.112,0,256s4.779,10.667,10.667,10.667h490.667
+                    			c5.888,0,10.667-4.779,10.667-10.667S507.221,245.333,501.333,245.333z"/>
+                    	</g>
+                    </g>
+                    <g>
+                    	<g>
+                    		<path d="M501.333,394.667H10.667C4.779,394.667,0,399.445,0,405.333C0,411.221,4.779,416,10.667,416h490.667
+                    			c5.888,0,10.667-4.779,10.667-10.667C512,399.445,507.221,394.667,501.333,394.667z"/>
+                    	</g>
+                    </g>
+                    </svg>
+                </div>
+            </div>
         </div>
-        <div class="header_back"></div>
         <nav class="nav">
             <div class="nav_linkbox">
                 <a href="#AboutHead" class="nav_linkbox_link nav-style nav-us">O nas</a>
@@ -75,9 +106,9 @@
                         utullamcorper. Integer vulputate ante urna. Vestibulum vitae posuere nisl. Proin finibus diam ut viverra semper. Phasellus in cursus magna, sed volutpat felis. Aliquam erat volutpat.</p>
 
                     <div class="container_wrap_gallery">
-                        <img class="gallery_img mySlides" src="./img/cars/car_1.png" alt="car1">
-                        <img class="gallery_img mySlides" src="./img/cars/car_2.png" alt="car2">
-                        <img class="gallery_img mySlides" src="./img/cars/car_3.png" alt="car3">
+                        <img class="gallery_img mySlides" src="./img/cars/car_1.jpg" alt="car1">
+                        <img class="gallery_img mySlides" src="./img/cars/car_2.jpg" alt="car2">
+                        <img class="gallery_img mySlides" src="./img/cars/car_3.jpg" alt="car3">
                     </div>
 
                     <div class="container_wrap_buttons">
@@ -139,13 +170,13 @@
                     <br>
                     <div>
                         <div class="wrapper">
-                            <p class="adress" id = "adress-name">Wypozyczalnia samochodów ślubnych</p>
+                            <p class="adress" id="adress-name">Wypozyczalnia samochodów ślubnych</p>
                             <p class="adress">tel.123 456 789</p>
                             <p class="adress">Email: weddingcars@123.com</p>
                         </div>
                         <div class="wrapper-icons">
-                            <a href="https://www.facebook.com/" target="_blank"><img class = "social-icon" src="./img/facebook.svg" alt="facebook-icon"></a>
-                            <a href="https://www.instagram.com/?hl=pl" target="_blank"><img class = "social-icon move-icon" src="./img/instagram.svg" alt="facebook-icon"></a>
+                            <a href="https://www.facebook.com/" target="_blank"><img class="social-icon" src="./img/facebook.svg" alt="facebook-icon"></a>
+                            <a href="https://www.instagram.com/?hl=pl" target="_blank"><img class="social-icon move-icon" src="./img/instagram.svg" alt="facebook-icon"></a>
                         </div>
                     </div>
 
@@ -154,7 +185,7 @@
                         <div class="form_inputs">
                             <input class="form_inputs_imput" type="email" id="email" name="e-mail" placeholder="Email" required>
                             <input class="form_inputs_imput" type="text" id="name" name="Name" placeholder="Imię" required>
-                            <input class="form_inputs_imput" type="text" id="forname" name="Forname" placeholder="Nazwisko" required >
+                            <input class="form_inputs_imput" type="text" id="forname" name="Forname" placeholder="Nazwisko" required>
                             <button class="form_inputs_button" id="form-btn" type="submit">Wyślij</button>
                         </div>
                         <textarea class="form_textarea" id="textarea" name="Message" placeholder="Miejsce na wiadomość" required></textarea>
@@ -176,7 +207,7 @@
             </div>
 
             <div class="footer_container_cont">
-                <p id = "adress-name">Wypozyczalnia samochodów ślubnych</p>
+                <p id="adress-name">Wypozyczalnia samochodów ślubnych</p>
                 <p>tel.123 456 789</p>
                 <p>Email: weddingcars@123.com</p>
             </div>
@@ -189,11 +220,7 @@
         <p class="footer_aut">Created and designes by Michał Piechulek 2019 &copy</p>
     </footer>
 
-    <!-- icons -->
-
-    <div>
-        <img src="./img/menu.svg" class="ham-icon icon-nav" id="ham-icon" alt="ham">
-    </div>
+    <!-- arrow up icon -->
 
     <div>
         <img src="./img/circle-up.svg" class="arrow-icon icon-nav" id="arrow-icon" alt="arrow">
