@@ -1,7 +1,17 @@
 
 .header {
-    position: relative;
     height: auto;
+
+    &_hed-1 {
+        margin: 6rem 0;
+        width: 100%;
+        text-align: center;
+        z-index: 3;
+        display: block;
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
 
     &_back {
         background-image: url("../img/Photo by Scott Webb on Unsplash.jpg");
@@ -15,32 +25,23 @@
         border-top: 7px solid $color-1;
         border-bottom: 7px solid $color-1;
         object-fit: cover;
-    }
+        position: relative;
 
-    &_hed-1 {
-        margin: 6rem 0;
-        width: 100%;
-        text-align: center;
-        z-index: 3;
-        display: block;
-        animation-name: moveInLeft;
-        animation-duration: 2s;
-        animation-timing-function: ease-out;
-    }
-
-    &_lang {
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        right: 1%;
-        transform: translate(-50%, -50%);
-
-        &_pl-cz {
+        &_lang {
             position: absolute;
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+            right: 5%;
+            transform: translate(50%, -50%);
+
+            &_pl-cz {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    }
+
+
     }
 }
 

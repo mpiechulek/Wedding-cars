@@ -1,14 +1,22 @@
-.footer{
-    height: 35rem;
-    width:100%;
-    background-color: $color-4 ;
+.footer {
+    height: auto;
+    width: 100%;
+    background-color: $color-4;
 
     &_container {
-        margin: 5rem 15rem 0 15rem;
+        margin: 5rem 15rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        &_cont{
+        @include respond(tab-land) {
+            margin: 5rem;
+        }
+        @include respond(phone) {
+            margin: 3rem 1rem;
+            flex-direction: column;
+        }
+
+        &_cont {
             margin: 4rem;
             padding: 2rem;
             border-left: 1px solid white;
@@ -17,7 +25,7 @@
         }
     }
 
-    &_aut{
+    &_aut {
         margin: 1rem;
         text-align: center;
     }

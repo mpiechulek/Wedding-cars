@@ -53,10 +53,18 @@ export const imgSlider = () => {
 
     for (let i = 0; dots.length > i; i++) {
         dots[i].addEventListener('click', () => {
+
             for (let j = 0; j < imgSlide.length; j++) {
                 imgSlide[j].style.display = "none";
             }
+
             imgSlide[i].style.display = "block";
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" gallery-button-blue", "");
+            }
+
+            dots[i].className += " gallery-button-blue";
         });
     }
 
