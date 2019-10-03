@@ -1,7 +1,9 @@
 .footer {
+    position: relative;
     height: auto;
     width: 100%;
     background-color: $color-4;
+    padding: 2rem;
 
     &_container {
         margin: 5rem 15rem;
@@ -17,7 +19,7 @@
         }
 
         &_cont {
-            margin: 4rem;
+            margin: 0 4rem;
             padding: 2rem;
             border-left: 1px solid white;
             display: flex;
@@ -26,7 +28,7 @@
     }
 
     &_aut {
-        margin: 1rem;
+        margin: 1rem 0;
         text-align: center;
     }
 }
