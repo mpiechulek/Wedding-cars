@@ -3,17 +3,23 @@
     margin: 2rem auto;
 }
 
+.galleryWeapper{
+    height:90vh;
+}
+
 .container_wrap_buttons {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .gallery_img {
+
     display: none;
     margin: 1rem auto;
-    height: auto;
-    width: 100%;
+    max-width: 100%;
+    max-height:50rem;
 }
 
 .gall-buttons {

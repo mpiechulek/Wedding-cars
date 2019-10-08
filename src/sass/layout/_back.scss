@@ -11,8 +11,7 @@
     background-attachment: fixed;
     width: 100%;
     height: 45rem;
-
-    @include respond(tab-port){
+    @include respond(tab-port) {
         display: none;
     }
 }

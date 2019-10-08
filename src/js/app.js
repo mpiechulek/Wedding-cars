@@ -7,6 +7,7 @@ const icon = document.getElementById('ham-icon');
 const close = document.getElementById('close-btn');
 const hamLinks = document.querySelectorAll('.ham-link');
 const scrollBtn = document.getElementById('arrow-icon');
+let check = document.getElementById('checkbox');
 
 //==============================================================================
 
@@ -30,7 +31,7 @@ hamLinks.forEach(function(elem) {
 
 //when scrolling the window the arrow button shows
 window.addEventListener('scroll', () => {
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         scrollBtn.style.display = "block";
     } else {
         scrollBtn.style.display = "none";
@@ -42,6 +43,11 @@ scrollBtn.addEventListener("click", () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+
+check.addEventListener("click", () => {
+    check.value="Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu w celu [CEL ZBIERANIA DANYCH] przez [DANE FIRMY] oraz przez podmioty trzecie"   ;
+});
+
 
 translator();
 imgSlider();
