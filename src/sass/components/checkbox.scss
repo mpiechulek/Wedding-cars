@@ -1,0 +1,46 @@
+.check {
+    position: relative;
+    display: block;
+    padding: 0 3rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 25vw;
+    @include respond(tab-land) {
+        width: 100%;
+    }
+}
+
+.check input {
+    opacity: 0;
+    position: absolute;
+}
+
+.check span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2.3rem;
+    width: 2.3rem;
+    background-color: none;
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+
+    &:hover {
+        background-color: $color-4;
+    }
+}
+
+.check input:checked ~ span {
+    background-color: $color-1;
+    padding: 2px;
+
+    &:hover {
+        background-color: $color-4;
+    }
+}
+// .check input:checked ~ span:before {
+//     display: block;
+// }

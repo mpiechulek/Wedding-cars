@@ -7,7 +7,8 @@ const icon = document.getElementById('ham-icon');
 const close = document.getElementById('close-btn');
 const hamLinks = document.querySelectorAll('.ham-link');
 const scrollBtn = document.getElementById('arrow-icon');
-let check = document.getElementById('checkbox');
+const check = document.getElementById('check');
+const checkbox = document.getElementById('checkbox');
 
 //==============================================================================
 
@@ -45,7 +46,9 @@ scrollBtn.addEventListener("click", () => {
 });
 
 check.addEventListener("click", () => {
-    check.value="Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu w celu [CEL ZBIERANIA DANYCH] przez [DANE FIRMY] oraz przez podmioty trzecie"   ;
+    if(checkbox.checked === true){
+        checkbox.value="Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu w celu [CEL ZBIERANIA DANYCH] przez [DANE FIRMY] oraz przez podmioty trzecie";
+    }
 });
 
 
